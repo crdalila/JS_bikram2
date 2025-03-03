@@ -53,7 +53,9 @@ function obtenerPares (arr) {
 }
 
 function pintarArray (arr) {
-    return arr.join(', ');
+    let joinedArray = arr.join(', ');
+    return '[' + joinedArray + ']';
+    
 }
 
 function arrayMapi (arr, funct) {
@@ -74,8 +76,8 @@ function eliminarDuplicados (arr) {
 // ARRAYS 2
 
 const arrayNumerosNeg = [0, -1, -2, -3, -4, -5, -6, -7, -8, -9];
-const holaMundo = ['Hola', 'mundo'];
-const loGuardaTodo = ['hola', 'que', 23, 42.33, 'tal'];
+const holaMundo = ['Hola', 'Mundo'];
+const loGuardoTodo = ['hola', 'que', 23, 42.33, 'tal'];
 const arrayDeArrays = [[756, 'nombre'], [225, 'apellido'], [298, 'direccion']];
 
 
@@ -136,5 +138,3 @@ function multiplicarArray(arr) {
     });
     return result;
 }
-
-console.log(multiplicarArray([2, 24]));
